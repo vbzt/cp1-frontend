@@ -1,0 +1,57 @@
+*{ 
+    font-family: "Limelight", sans-serif;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+}
+
+body{ 
+  display: flex;
+  flex-direction: column;
+  gap: 5cqh;
+}
+
+:root {
+  --bg: #ffffff;
+  --text: #262626;
+  --accent: #064661;
+}
+header {
+  color: white;
+}
+
+header .title{ 
+  display: flex;
+  align-items: center;
+  height: 128px;
+  background-color: var(--accent);
+  padding: 0 32px
+}
+
+header .title h1 {
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header img{ 
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+section{ 
+  display: flex;
+  flex-direction: column;
+  padding: 0 32px;
+}
+
+section h2{ 
+  font-size: 2.2rem;
+  color: var(--accent);
+}
+
