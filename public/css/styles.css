@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{ 
-    font-family: "Limelight", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     padding: 0;
     margin: 0;
@@ -13,10 +15,18 @@ body{
 }
 
 :root {
-  --bg: #ffffff;
+  --bg: #EFE9F4;
   --text: #262626;
   --accent: #064661;
+  --title: "Limelight", sans-serif;
 }
+
+h1, h2, h3, h4{ 
+  font-family: var(--title);
+  color: var(--accent);
+  text-transform: uppercase;
+}
+
 header {
   color: white;
 }
@@ -35,6 +45,7 @@ header .title h1 {
   text-align: center;
   margin: 0;
   font-size: 2.5rem;
+  color: var(--bg)
 }
 
 header img{ 
@@ -44,14 +55,145 @@ header img{
   display: block;
 }
 
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 8cqh;
+}
+
 section{ 
   display: flex;
   flex-direction: column;
+  gap: 4cqh;
   padding: 0 32px;
 }
 
 section h2{ 
   font-size: 2.2rem;
-  color: var(--accent);
 }
 
+section h3{ 
+  font-size: 1.9rem;
+}
+
+.about div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+
+.about div .about-text{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  & p{ 
+    font-size: 1.15rem
+  }
+}
+
+.about div img {
+  flex: 0 0 45%;
+  min-width: 220px;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.pricing h2{ 
+  text-align: center;
+}
+
+.cards{ 
+  display: flex;
+  flex-direction: row;
+  gap: 4cqh;
+
+}
+
+.card{ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 3px solid var(--accent);
+  border-radius: 10px;
+  background-color: #99BEDF;
+  padding: 2cqh;
+  width: 100%;
+  height: 10cqh;
+}
+
+.card .card-title{ 
+  font-family: var(--title);
+  color: var(--text);
+}
+
+.card p{ 
+  width: 100%;
+}
+
+.card-secondary{ 
+  color: var(--bg);
+  background-color: #064661B2;
+}
+
+.card-secondary .card-title{ 
+  color: var(--bg);
+}
+
+.gallery .container{ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 4cqh;
+
+}
+
+.container img{ 
+  width: 250px;
+  border-radius: 50px;
+}
+
+.contact h2{ 
+  text-align: center;
+}
+
+.contact p{
+  font-size: 1.1rem;
+}
+
+.socials{ 
+  display: flex;
+  flex-direction: column;
+  gap: 1.2cqh;
+}
+
+.socials i{ 
+  
+  font-size: 1.6rem;
+}
+
+.socials p {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+footer{ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--accent);
+  padding: 4cqh;
+}
+
+footer h1, footer h2{ 
+  color: var(--bg);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
